@@ -1,6 +1,5 @@
 const express = require('express'); 
 const app = express();
-const ejsLint = require('ejs-lint');
 
 app.set('view engine', 'ejs');
 
@@ -49,7 +48,6 @@ const data = {
     }
 }
 
-console.log(ejsLint.lint('index', data));
 
 
 app.get('/', function(req, res){ 
