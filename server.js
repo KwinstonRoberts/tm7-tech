@@ -48,8 +48,6 @@ const data = {
     }
 }
 
-console.log(ejsLint.lint('index', data));
-
 
 app.get('/', function(req, res){ 
     res.render('index', data);
