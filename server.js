@@ -48,10 +48,11 @@ const data = {
     }
 }
 
+console.log(ejsLint.lint('index', data));
 
 
 app.get('/', function(req, res){ 
     res.render('index', data);
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 8080, () => console.log('Example app listening on port 3000!'))
