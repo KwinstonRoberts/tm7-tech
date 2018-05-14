@@ -1,0 +1,19 @@
+{
+  "name": "material-ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "hammerjs": "^2.0.8"
+  },
+  "devDependencies": {
+    "ejs-lint": "^0.3.0"
+  },
+  "scripts": {
+    "lint:ejs": "ejslint views/index.ejs"
+  },
+  "author": "",
+  "license": "ISC"
+}

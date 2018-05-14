@@ -1,0 +1,29 @@
+        <!-- Slider Area
+        ================================================== -->
+		<div id="header" class="header-section">		
+                <!-- Background Slider Begins -->
+                <div id="slide" class="home-slider relative">
+                
+                    <!-- Slides -->
+                    <div class="slides-container">
+                        <!-- Slider Images -->
+                        <% for(var x=1; x<4;x++){ %>
+                        <div class="<%='slide-item' + x + ' parallax' + x + 'bg' %>"></div>	
+                        <% } %>
+                    </div>
+                        
+                    <!-- Slide Text Begins -->
+                    <div class="text-slider-section absolute container">
+                        <div class="text-slider">
+                            <ul class="slide-text slides">
+                                <% for(var x=1; x<4;x++){ %>
+                                <li class="capitalize">We <i class="fa fa-1x fa-heart"></i> Agile 
+                                    <h5>Angular, Java, MongoDB.</h5>
+                                </li>
+                                <% } %>
+                            </ul>
+                        </div>				
+                    
+                    </div><!-- Slide Text Ends -->				
+                </div>
+            </div><!-- Slider Ends -->

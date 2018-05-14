@@ -1,0 +1,20 @@
+	  
+		<!-- Socials Area
+		================================================== -->
+		<section id="socials" class="bg-dark-blue">
+	  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                                <ul class="text-center footer-social">
+                                    <% data.social.forEach((link)=>{ %>
+                                        <li class="animated" data-animation="zoomIn" data-animation-delay="300">
+                                            <a href="<%=link.href%>" class="white"><i class="fa fa-<%=link.name%> fa-3x"></i></a>
+                                        </li>
+                                    <% }) %>
+                                </ul>
+                        </div><!-- end col-md-12 -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            
+            </section>

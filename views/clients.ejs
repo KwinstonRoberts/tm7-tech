@@ -1,0 +1,17 @@
+		<!-- Client Area
+		================================================== -->
+		<section id="clients" class="bg-very-dark-blue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">				
+                            <ul id="flexiselDemo" class="text-center logo-client">
+                                <% data.tools.forEach((tool)=>{ %>
+                                    <li>
+                                        <a href="http://<%=tool.href%>"><img src="images/client/<%=tool.name%>.png" alt="" class="img-responsive"></a>
+                                    </li>
+                                <%})%>
+                            </ul>
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end container -->	
+            </section>

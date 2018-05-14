@@ -1,0 +1,37 @@
+
+
+<!-- Page Loader -->
+<div id="pageloader">
+    <div class="loader-item fa fa-spin colored-border"></div>
+</div>
+
+<!-- Header Area Begins 
+================================================== -->
+<header id="top">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container no-container">
+            <!-- Navbar Header -->
+            <div class="navbar-header">
+                <!-- Navbar Toogle -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <% for(var x=0; x<3; x++){%>
+                    <span class="icon-bar"></span>
+                    <%}%>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand" style='margin-bottom:30px' href="#"><img src="images/Tm7-big-white.png" alt="TM7" class="logo" height=40 width=150></a>
+            </div>
+            <!-- Navbar Menu Section -->
+            <div class="navbar-collapse collapse">
+                <nav>
+                    <ul class="nav navbar-nav navbar-right">
+                        <% data.navLinks.forEach((link)=>{ %>
+                        <li><a href="#<%= link.href %>" class="scroll"><%= link.name %></a></li>			
+                        <% }) %>						
+                    </ul>
+                </nav>
+            </div><!-- Navbar Menu Section Ends -->
+        </div>
+    </div>
+</header><!-- Header Ends -->
