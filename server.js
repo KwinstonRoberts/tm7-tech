@@ -22,13 +22,15 @@ const data = {
         
         team:[
             {
-                name:'Kyle Roberts',
-                title:'UI Developer',
+                name:'',
+                title:'',
                 symbol:'code',
-                image:'kyle',
-                bio:`A graduate of lighthouse labs, Kyle is a front-end development enthusiast. Off hours, 
-                    you can find him soldering together electronic curcuits, or with his programmer
-                    friends at Tango Palace Coffee Shop.`,
+                image:'1',
+                bio:`Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Exercitationem illum officia libero maiores omnis. 
+                 Iste dicta quaerat perspiciatis mollitia enim dignissimos eligendi aliquid,
+                  porro cupiditate fugit asperiores expedita atque. Atque.
+                `,
                 social:
                 [
                     {
@@ -53,4 +55,4 @@ app.get('/', function(req, res){
     res.render('index', data);
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 8080, () => console.log('Example app listening on port 8080!'))
