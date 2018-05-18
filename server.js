@@ -44,7 +44,7 @@ const data = {
             {name:'linkedin', href:'https://www.linkedin.com/company/tm7-tech/'}
         ],
         tools:[
-            // {name:'angular',href:'angular.io'},
+            {name:'angular',href:'angular.io'},
             // {name:'java', href: 'java.com'}
         ]
     }

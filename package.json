@@ -9,7 +9,7 @@
     "hammerjs": "^2.0.8"
   },
   "scripts": {
-    "start": "npm i && node server.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"
