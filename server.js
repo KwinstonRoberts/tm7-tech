@@ -7,15 +7,15 @@ app.use('/css',express.static('public/css'));
 app.use('/images',express.static('public/images'));
 app.use('/js',express.static('public/js'));
 app.use('/fonts',express.static('public/fonts'));
+app.use('/node_modules',express.static('node_modules'));
 
 
 const data = {
     data:{
         navLinks: 
             [
-                {name:'Home', href:'top'},
+                {name:'Home', href:'home'},
                 {name:'Services',href:'services'},
-                // {name:'Works',href:'works'},
                 {name:'Team',href:'team'},
                 {name:'Contact',href:'contact'}
             ],

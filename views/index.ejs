@@ -22,6 +22,9 @@
 	<link href="css/flaticon.css" rel="stylesheet" type="text/css" />
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/fullpage.js/dist/jquery.fullpage.min.css" type="text/css">
+
+
 	<!-- Color Panel -->
 	<link href="css/color_panel.css" rel="stylesheet" type="text/css" />
 	<!-- Skin Colors -->
@@ -52,13 +55,18 @@
 <body>
 
 	<%- include header %>
-	<%- include slider %>
-	<%- include services %>
-	<%- include team %>
-	<%- include contact %>
-	<%- include social %>
-	<%- include clients %>
-	<%- include footer %>
+	<div id="fullpage">
+		<div class='section' data-anchor="home"><%- include slider %></div>
+		<div class='section' data-anchor="services"><%- include services %></div>
+		<div class='section' data-anchor="team"><%- include team %></div>
+		<div class='section' data-anchor="contact">
+			<div id='bottom'>
+				<%- include contact %>
+				<%- include social %>
+				<%- include footer %>
+			</div>
+		</div>
+	</div>
 
 	<!-- Javascrit Core
 	================================================== -->
@@ -74,7 +82,16 @@
 	<script src="js/jquery.superslides.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script src="js/jquery.custom.js"></script>
-	<!-- Color -->
+	<script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				normalScrollelements:'#bottom',
+				anchors:['home','services','team','contact']
+			});
+		});
+	</script>
+	<!-- color -->
 	<script type="text/javascript" src="js/color-panel.js"></script>
 </body>
 
