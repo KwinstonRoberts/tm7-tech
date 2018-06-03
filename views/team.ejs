@@ -1,56 +1,76 @@
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">        
-                    <h2 class="text-center animated" data-animation="fadeIn" data-animation-delay="400">Company Profile & Team</h2>
-       
-                    <div class="devider">
-                        <div class="devider-line-h devider-line-h-sea-green animated" data-animation="zoomIn" data-animation-delay="1000"></div>
-                        <div class="devider-round-out devider-round-out-sea-green animated" data-animation="zoomIn" data-animation-delay="700">
-                            <div class="devider-round-in devider-round-in-sea-green"></div>
-                        </div>
-                    </div>
-       
-                    <p class="text-center lead op08 animated" data-animation="fadeIn" data-animation-delay="400">
-                        Nemo <span class="span-color">enim ipsam</span> voluptatem quia voluptas sit aspernatur
-                    </p>
-                    <p class="text-center title-description animated" data-animation="fadeIn" data-animation-delay="400">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-       
-                </div><!-- end col-md-12 -->      
-    
-            </div><!-- end row -->
-        </div><!-- end container -->
+<section id='team-content'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center animated" data-animation="fadeIn" data-animation-delay="400">Company Profile & Team</h2>
 
-        <!-- team start -->    
-        <% data.team.forEach((member)=>{ %>
-        <div class="col-md-12"> 
+                <div class="devider">
+                    <div class="devider-line-h devider-line-h-sea-green animated" data-animation="zoomIn" data-animation-delay="1000"></div>
+                    <div class="devider-round-out devider-round-out-sea-green animated" data-animation="zoomIn" data-animation-delay="700">
+                        <div class="devider-round-in devider-round-in-sea-green"></div>
+                    </div>
+                </div>
+
+                <p class="text-center lead op08 animated" data-animation="fadeIn" data-animation-delay="400">
+                    Nemo
+                    <span class="span-color">enim ipsam</span> voluptatem quia voluptas sit aspernatur
+                </p>
+                <p class="text-center title-description animated" data-animation="fadeIn" data-animation-delay="400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.
+                </p>
+
+            </div>
+            <!-- end col-md-12 -->
+
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+
+    <!-- team start -->
+    <% data.team.forEach((member)=>{ %>
+        <div class="col-md-12">
             <div class="col-md-6 bg-dark-blue animated" data-animation="fadeIn" data-animation-delay="500">
                 <img src="images/team/<%=member.image%>.png" alt="photo" class="pull-right img-responsive">
                 <div class="clearfix"></div>
-          </div>
-  
+            </div>
+
             <div class="col-md-6 bg-cyan team-container animated" data-animation="fadeIn" data-animation-delay="300">
                 <ul class="team-social">
                     <% member.social.forEach((link)=>{ %>
-                        <li><a href="images/team/<%=link.href%>.png" class="dark-cyan"><i class="fa fa-<%=link.name%>"></i></a></li>
-                    <% }) %>
+                        <li>
+                            <a href="images/team/<%=link.href%>.png" class="dark-cyan">
+                                <i class="fa fa-<%=link.name%>"></i>
+                            </a>
+                        </li>
+                        <% }) %>
                 </ul>
-                <p class="team-content pull-left dark-cyan">  
-                    <%= member.bio %>    	 
+                <p class="team-content pull-left dark-cyan">
+                    <%= member.bio %>
                 </p>
                 <div class="team-name pull-left">
                     <i class="fa fa-<%=member.symbol%> fa-2x white pull-left"></i>
-                    <h5 class="white"><%= member.name %></h5>
-                    <span class="team-title dark-cyan pull-left"><%= member.title %></span>
+                    <h5 class="white">
+                        <%= member.name %>
+                    </h5>
+                    <span class="team-title dark-cyan pull-left">
+                        <%= member.title %>
+                    </span>
                 </div>
-            
+
                 <div class="clearfix"></div>
-            </div><!-- end col-md-6-->
-  
-        </div><!-- end col-md-12--> 
+            </div>
+            <!-- end col-md-6-->
 
-    <% }) %>
-        <!-- team are end -->
-        <div class="clearfix"></div>
+        </div>
+        <!-- end col-md-12-->
 
+        <% }) %>
+            <!-- team are end -->
+            <div class="clearfix"></div>
+
+</section>
