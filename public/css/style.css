@@ -39,7 +39,9 @@ Envato Profile: http://themeforest.net/user/booharry
 .flex-viewport li{
 	height:90px!important;
 }
-
+.black-text{
+	color:black!important;
+}
 
 /* 1 - GENERAL STYLES
 ================================================== */

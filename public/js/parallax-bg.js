@@ -14,7 +14,7 @@ $(window).bind('load', function () {
 			$('.parallax1bg').parallax("50%", 0.5);
 			$('.parallax2bg').parallax("50%", 0.5);
 			$('.parallax3bg').parallax("50%", 0.5);
-			$('.parallax4bg').parallax("50%", 0.5);			
+       
 		}
 	}	
 	parallaxInit();	 

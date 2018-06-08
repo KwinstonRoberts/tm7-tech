@@ -8,24 +8,23 @@
             <!-- Slides -->
             <div class="slides-container">
                 <!-- Slider Images -->
-                <% for(var x=1; x<4;x++){ %>
-                    <div class="<%='slide-item' + x + ' parallax' + x + 'bg' %>"></div>
-                    <% } %>
+                <% data.slides.forEach((slide)=>{ %>
+                    <div class="<%='slide-item' + slide.image_id + ' parallax' + slide.image_id + 'bg' %>"></div>
+                    <% }); %>
             </div>
 
             <!-- Slide Text Begins -->
             <div class="text-slider-section absolute container">
                 <div class="text-slider">
                     <ul class="slide-text slides">
-                        <% for(var x=1; x<4;x++){ %>
-                            <li class="capitalize">We
-                                <i class="fa fa-1x fa-heart"></i> Agile
-                                <h5>Angular, Java, MongoDB, ESB</h5>
+                        <% data.slides.forEach((slide)=>{ %>
+                            <li class="capitalize <%=slide.white? '':'black-text'%>"><%=slide.header_s%>
+                                <i class="fa fa-1x fa-<%=slide.symbol%>"></i> <%=slide.header_e%>
+                                <h5><%=slide.text%></h5>
                             </li>
-                            <% } %>
+                            <% }); %>
                     </ul>
                 </div>
-
             </div>
             <!-- Slide Text Ends -->
         </div>
