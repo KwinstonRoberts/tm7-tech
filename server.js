@@ -19,27 +19,6 @@ const data = {
                 {name:'Team',href:'team'},
                 {name:'Contact',href:'contact'}
             ],
-        
-        team:[
-            {
-                name:'',
-                title:'',
-                symbol:'code',
-                image:'1',
-                bio:`Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                 Exercitationem illum officia libero maiores omnis. 
-                 Iste dicta quaerat perspiciatis mollitia enim dignissimos eligendi aliquid,
-                  porro cupiditate fugit asperiores expedita atque. Atque.
-                `,
-                social:
-                [
-                    {
-                        name:'linkedin', 
-                        href:'https://www.linkedin.com/in/kyle-roberts-6a67818a/'
-                    } 
-                ]
-            }
-        ],
         social: [
             {name:'linkedin', href:'https://www.linkedin.com/company/tm7-tech/'}
         ],
