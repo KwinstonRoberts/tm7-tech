@@ -292,6 +292,7 @@ h2 { font-weight: 300; }
 	font-size: 14px;
 	font-weight: 600;
 	color: #000 !important;
+	border:1px solid white;
 	padding: 5px 20px;
 	-webkit-border-radius: 50px;
 	   -moz-border-radius: 50px;
