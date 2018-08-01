@@ -43,4 +43,4 @@ app.get('/loaderio-5ac7d3d82c95ec35c31720804f81267d', function(req, res){
     res.sendFile('loaderio-5ac7d3d82c95ec35c31720804f81267d.txt',{root: __dirname});
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('Example app listening on port 8080!'))
+app.listen(process.env.PORT || 8080, () => console.log('Tm7 app listening on port:' + (process.env.PORT || 8080)));
