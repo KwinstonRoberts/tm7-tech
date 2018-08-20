@@ -63,7 +63,7 @@ h1 { font-size: 45px; }
 h2 { font-size: 40px; }
 h3 { font-size: 35px; }
 h4 { font-size: 28px; }
-h5 { font-size: 18px; }
+h5 { font-size: 16px; }
 h6 { font-size: 14px; }
 
 h2 { font-weight: 300; }
@@ -869,7 +869,6 @@ p.team-content {
 	color:#333333;
 	font-style: italic;
 	line-height: 30px;
-	font-family: 'Lato', sans-serif;
 	padding: 0 30px 0 30px;
 	margin:0 0 30px;
 	width: 500px;
