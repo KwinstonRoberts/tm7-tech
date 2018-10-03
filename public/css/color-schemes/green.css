@@ -23,7 +23,7 @@
 #blog-outer .blog-single .comment-wrap .name,
 #blog-outer .blog-single .comment-wrap .reply-btn,
 #blog-outer .blog-single blockquote i{
-	color:#1abc9c !important;
+	color:#2196f3 !important;
 }
 
 /* Background Color */
@@ -49,19 +49,19 @@
 .fun-factors .funfact-container,
 /* V1 */
 .slider-wrapper{
-	background-color: #1abc9c !important;
+	background-color: #2196f3 !important;
 }
 
 /* Border Color */
-.navbar ul.nav li a:hover, .navbar ul.nav li a:focus, .navbar-default .navbar-nav > .active > a,
+.navbar-default
 .navbar .navbar-collapse,
 #contact form input.input-text,
 #contact form textarea.text-area, 
-.blog-container a:hover,
+
 .sidebar .input-group-addon,
 .sidebar .tags li,
 #blog-outer .blog-single blockquote,
 .devider-round-out-sea-green,
 #contact form input.btn-msg {
-	border-color:#1abc9c !important;
+	border-color:#2196f3 !important;
 }

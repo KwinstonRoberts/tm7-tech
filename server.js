@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
-
 app.use('/css',express.static('public/css'));
 app.use('/images',express.static('public/images'));
 app.use('/js',express.static('public/js'));
@@ -40,4 +39,8 @@ app.get('/', function(req, res){
     res.render('index', data);
 });
 
-app.listen(process.env.PORT || 8080, () => console.log('Example app listening on port 8080!'))
+app.get('/loaderio-5ac7d3d82c95ec35c31720804f81267d', function(req, res){ 
+    res.sendFile('loaderio-5ac7d3d82c95ec35c31720804f81267d.txt',{root: __dirname});
+});
+
+app.listen(process.env.PORT || 8080, () => console.log('Tm7 app listening on port:' + (process.env.PORT || 8080)));

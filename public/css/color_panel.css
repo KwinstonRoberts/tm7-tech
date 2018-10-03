@@ -91,10 +91,10 @@
 /* Green */
 #theme-panel .devider-round-out-green{
 	background:#FFFFFF;
-	border: 3px solid #1abc9c  !important;
+	border: 3px solid #2196f3  !important;
 }
 #theme-panel .devider-round-in-green {
-    background: #1abc9c ;
+    background: #2196f3 ;
 }
 /* Blue Bg */
 #theme-panel .devider-round-out-blue-bg{
@@ -156,7 +156,7 @@
 
 /* Color Panel Colors */
 .green-bg {
-    background: #1abc9c;
+    background: #2196f3;
 }
 .blue-bg{
     background: #5cace2;
